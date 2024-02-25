@@ -11,11 +11,11 @@ function checkForSpam(message) {
   //змінна "sale"
   const textSale = 'sale';
   //змінна для приведення рядка message до малих літер
-  const massageLow = message.toLowerCase();
+  const messageLow = message.toLowerCase();
   //перевірка у message на наявність тексту "sale"
-  const checkSpam = massageLow.includes(textSpam);
+  const checkSpam = messageLow.includes(textSpam);
   //перевірка у message на наявність тексту "sale"
-  const checkSale = massageLow.includes(textSale);
+  const checkSale = messageLow.includes(textSale);
   // Генеруємо повідомлення наявність заборонених слів(false/true)
   return checkSpam || checkSale;
 }
